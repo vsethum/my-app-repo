@@ -1,0 +1,8 @@
+deployment:
+dev:
+branch: master
+commands:
+
+test:
+override:
+- echo 'no tests, just say us Okay!'
