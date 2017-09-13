@@ -1,8 +1,8 @@
-deployment:
-dev:
-branch: master
-commands:
-
-test:
-override:
-- echo 'no tests, just say us Okay!'
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.2-stretch-browsers
+    steps:
+      - checkout
+      - run: pip install -r requirements/dev.txt
